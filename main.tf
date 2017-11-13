@@ -1,7 +1,3 @@
-data "template_file" "test" {
-  template = "${file("test.tpl")}"
-
-  vars {
-    variable = "test"
-  }
+resource "aws_s3_bucket" "bucket" {
+  bucket = "my-tf-test-bucket"
 }
